@@ -8,7 +8,7 @@ spec:
   - name: cassandra
     port: 9042
     targetPort: 9042
-    nodePort: 90042
+    nodePort: 30042
     protocol: TCP
   selector:    
     app: cassandra
