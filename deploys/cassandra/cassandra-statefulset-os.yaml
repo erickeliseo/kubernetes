@@ -1,9 +1,3 @@
-#Control de Cambios
-# 1. Se quito la seccion del ready-probe.sh, pero estoy considerando agregarla de nuevo
-# 2. Se agrego la variable de ambiente CASSANDRA_DATA para la ubicacion de los datos # NO FUNCIONO
-# 3. Se quito la creacion del storage class local
-# 4. Se cambio el mountPath a /var/lib/cassandra
-
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
