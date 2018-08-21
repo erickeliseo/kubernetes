@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
-metadata:  
-  name: wordpress-srv-ext
+metadata:
+  name: lb-wordpress
 spec:
   type: NodePort
-  ports:  
-  - name: wordpress-srv-ext
+  ports:
+  - name: lb-wordpress
     port: 80
     targetPort: 80
-    nodePort: 30042
+    nodePort: 32095
     protocol: TCP
-  selector:    
+  selector:
     app: wordpress
